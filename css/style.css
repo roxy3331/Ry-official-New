@@ -1213,8 +1213,8 @@ body.modal-open {
   }
 
   .hero {
-    padding: var(--space-10) 0 var(--space-6);
-    min-height: 100svh;
+    padding: var(--space-10) 0 var(--space-4);
+    min-height: unset;
     height: auto;
     align-items: flex-start;
   }
@@ -1251,16 +1251,16 @@ body.modal-open {
   }
 
   .hero-heading {
-    font-size: clamp(2.2rem, 8vw, 3.5rem);
+    font-size: clamp(2.4rem, 9vw, 3.6rem);
   }
 
   .name-text {
-    font-size: clamp(2rem, 7.5vw, 3rem);
+    font-size: clamp(2.1rem, 8vw, 3rem);
     white-space: normal;
   }
 
   .hero-content {
-    gap: var(--space-2);
+    gap: 0.9rem;
   }
 
   .hero-subtitle {
@@ -1285,7 +1285,7 @@ body.modal-open {
     padding-right: var(--space-1);
     width: 100%;
     max-width: 100%;
-    gap: var(--space-2);
+    gap: 0.75rem;
   }
 
   /* Character visible but very subtle behind text */
@@ -1296,17 +1296,18 @@ body.modal-open {
   }
 
   .hero-heading {
-    font-size: clamp(1.9rem, 7.5vw, 2.8rem);
+    font-size: clamp(2.2rem, 9.5vw, 3rem);
   }
 
   .name-text {
-    font-size: clamp(1.7rem, 6.5vw, 2.4rem);
+    font-size: clamp(1.9rem, 8.5vw, 2.6rem);
     white-space: normal;
   }
 
   .hero-cta {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.55rem;
   }
 
   .btn {
