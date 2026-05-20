@@ -1126,7 +1126,7 @@ body.modal-open {
   }
 
   .section-inner {
-    padding: var(--space-8) var(--space-3);
+    padding: var(--space-6) var(--space-3);
   }
 }
 
@@ -1213,10 +1213,14 @@ body.modal-open {
   }
 
   .hero {
-    padding: var(--space-10) 0 0;
+    padding: var(--space-10) 0 var(--space-6);
     min-height: 100svh;
-    height: 100svh;
+    height: auto;
     align-items: flex-start;
+  }
+
+  .hero-scroll {
+    display: none;
   }
 
   /* Text left, character behind at low opacity */
@@ -1247,12 +1251,16 @@ body.modal-open {
   }
 
   .hero-heading {
-    font-size: clamp(2.6rem, 9vw, 4rem);
+    font-size: clamp(2.2rem, 8vw, 3.5rem);
   }
 
   .name-text {
-    font-size: clamp(2.4rem, 8vw, 3.5rem);
+    font-size: clamp(2rem, 7.5vw, 3rem);
     white-space: normal;
+  }
+
+  .hero-content {
+    gap: var(--space-2);
   }
 
   .hero-subtitle {
@@ -1277,6 +1285,7 @@ body.modal-open {
     padding-right: var(--space-1);
     width: 100%;
     max-width: 100%;
+    gap: var(--space-2);
   }
 
   /* Character visible but very subtle behind text */
@@ -1287,11 +1296,11 @@ body.modal-open {
   }
 
   .hero-heading {
-    font-size: clamp(2.8rem, 12vw, 4.5rem);
+    font-size: clamp(1.9rem, 7.5vw, 2.8rem);
   }
 
   .name-text {
-    font-size: clamp(2.2rem, 10vw, 3.2rem);
+    font-size: clamp(1.7rem, 6.5vw, 2.4rem);
     white-space: normal;
   }
 
@@ -1798,6 +1807,16 @@ body.modal-open {
 .hiw-note {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+@media (max-width: 480px) {
+  .pkg-tab {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.85rem;
+  }
+  .pkg-tabs {
+    gap: var(--space-1);
+  }
 }
 
 @media (max-width: 768px) {
