@@ -238,6 +238,78 @@ img {
   font-size: 0.9rem;
 }
 
+/* Language Toggle */
+.lang-toggle {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--text-secondary);
+  font-family: 'Cairo', 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+.lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── Arabic / RTL overrides ─────────────────── */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Manrope', sans-serif;
+}
+[dir="rtl"] .hero-content,
+[dir="rtl"] .section-header,
+[dir="rtl"] .step-card,
+[dir="rtl"] .treview-card,
+[dir="rtl"] .footer-brand {
+  text-align: right;
+}
+[dir="rtl"] .hero-badge,
+[dir="rtl"] .hero-cta,
+[dir="rtl"] .hero-trust,
+[dir="rtl"] .hero-f2f,
+[dir="rtl"] .hiw-cta,
+[dir="rtl"] .nav-inner,
+[dir="rtl"] .footer-inner {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .hero-heading,
+[dir="rtl"] .hero-name {
+  text-align: right;
+}
+[dir="rtl"] .hero-character-bg {
+  right: auto;
+  left: 0;
+  transform: scaleX(-1);
+}
+[dir="rtl"] .pkg-tabs {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .treview-top {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .form-row {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .footer-links {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .steps-grid {
+  direction: rtl;
+}
+[dir="rtl"] .hero-heading .heading-line {
+  font-family: 'Cairo', sans-serif;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+}
+
 /* Hamburger */
 .nav-hamburger {
   display: none;

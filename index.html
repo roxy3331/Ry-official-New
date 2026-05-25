@@ -11,7 +11,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="preload" as="image" href="Assets/download (2).webp" type="image/webp" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -30,14 +30,15 @@
         </div>
       </a>
       <ul class="nav-links">
-        <li><a href="#packages">Store</a></li>
-        <li><a href="#deals">Deals</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#packages" id="nav_store_el">Store</a></li>
+        <li><a href="#deals" id="nav_deals_el">Deals</a></li>
+        <li><a href="#reviews" id="nav_reviews_el">Reviews</a></li>
+        <li><a href="#about" id="nav_about_el">About</a></li>
       </ul>
-      <a href="https://chat.whatsapp.com/DBNBe1kfYVaGwYsnJdm4Qp" target="_blank" class="btn-nav">
+      <a href="https://chat.whatsapp.com/DBNBe1kfYVaGwYsnJdm4Qp" target="_blank" class="btn-nav" id="nav_join_el">
         Join Group <span class="btn-icon">↗</span>
       </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">عربي</button>
       <button class="nav-hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -47,10 +48,10 @@
   <!-- Mobile nav drawer -->
   <div class="nav-drawer" id="navDrawer">
     <ul>
-      <li><a href="#packages" class="drawer-link">Store</a></li>
-      <li><a href="#deals" class="drawer-link">Deals</a></li>
-      <li><a href="#reviews" class="drawer-link">Reviews</a></li>
-      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#packages" class="drawer-link" id="drawer_store_el">Store</a></li>
+      <li><a href="#deals" class="drawer-link" id="drawer_deals_el">Deals</a></li>
+      <li><a href="#reviews" class="drawer-link" id="drawer_reviews_el">Reviews</a></li>
+      <li><a href="#about" class="drawer-link" id="drawer_about_el">About</a></li>
       <li><a href="https://chat.whatsapp.com/DBNBe1kfYVaGwYsnJdm4Qp" target="_blank" class="drawer-link gold">Join WhatsApp Group ↗</a></li>
     </ul>
   </div>
@@ -73,13 +74,13 @@
       <!-- Badge -->
       <div class="hero-badge">
         <span class="badge-num">#1</span>
-        <span class="badge-text">Pakistan's Most Trusted PUBG UC &amp; Accounts Store</span>
+        <span class="badge-text" id="hero_badge_el">Pakistan's Most Trusted PUBG UC &amp; Accounts Store</span>
       </div>
 
       <!-- Heading -->
       <h1 class="hero-heading">
-        <span class="heading-line">RY-OFFICIAL</span>
-        <span class="heading-line">Accounts &amp; UC Store</span>
+        <span class="heading-line" id="hero_h1_1_el">RY-OFFICIAL</span>
+        <span class="heading-line" id="hero_h1_2_el">Accounts &amp; UC Store</span>
       </h1>
 
       <!-- Name display -->
@@ -89,7 +90,7 @@
       </div>
 
       <!-- Subtitle -->
-      <p class="hero-subtitle">
+      <p class="hero-subtitle" id="hero_subtitle_el">
         Pakistan's most reliable PUBG UC &amp; Accounts store.<br />
         Instant delivery, zero fraud record, and the best PAK region rates.
       </p>
@@ -98,11 +99,11 @@
       <div class="hero-cta">
         <a href="https://chat.whatsapp.com/DBNBe1kfYVaGwYsnJdm4Qp" target="_blank" class="btn btn--primary">
           <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Join WhatsApp Group
+          <span id="hero_btn1_el">Join WhatsApp Group</span>
           <span class="btn-arrow">↗</span>
         </a>
         <a href="#packages" class="btn btn--ghost">
-          View Packages
+          <span id="hero_btn2_el">View Packages</span>
           <span class="btn-arrow">▶</span>
         </a>
       </div>
@@ -110,14 +111,14 @@
       <!-- F2F highlight -->
       <div class="hero-f2f reveal">
         <span class="f2f-badge">F2F</span>
-        <span class="f2f-text"><strong>Face-to-Face Deals Available</strong> in Major Cities — Always Open · Extra F2F charges apply</span>
+        <span class="f2f-text" id="hero_f2f_el"><strong>Face-to-Face Deals Available</strong> in Major Cities — Always Open · Extra F2F charges apply</span>
       </div>
 
       <!-- Trust pills -->
       <div class="hero-trust">
-        <span class="trust-pill">5–10 Min Delivery</span>
-        <span class="trust-pill">Zero Fraud Record</span>
-        <span class="trust-pill">1000+ Deals Done</span>
+        <span class="trust-pill" id="hero_pill1_el">5–10 Min Delivery</span>
+        <span class="trust-pill" id="hero_pill2_el">Zero Fraud Record</span>
+        <span class="trust-pill" id="hero_pill3_el">1000+ Deals Done</span>
       </div>
     </div>
     </div><!-- /hero-inner -->
@@ -190,9 +191,9 @@
 
       <!-- Header -->
       <div class="section-header reveal">
-        <span class="section-tag">Real Deals</span>
-        <h2 class="section-title">1000+ Deals <span class="text-accent">Sold</span></h2>
-        <p class="section-sub">Real WhatsApp screenshots. Real payments. Real customers. Alhamdulillah.</p>
+        <span class="section-tag" id="deals_tag_el">Real Deals</span>
+        <h2 class="section-title" id="deals_title_el">1000+ Deals <span class="text-accent">Sold</span></h2>
+        <p class="section-sub" id="deals_sub_el">Real WhatsApp screenshots. Real payments. Real customers. Alhamdulillah.</p>
       </div>
 
       <!-- Rating summary -->
@@ -200,7 +201,7 @@
         <div class="summary-score">
           <span class="score-num">4.9</span>
           <div class="score-stars">★★★★★</div>
-          <span class="score-label">Overall Rating</span>
+          <span class="score-label" id="deals_rating_el">Overall Rating</span>
         </div>
         <div class="summary-bars">
           <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div><span>92%</span></div>
@@ -276,9 +277,9 @@
     <!-- CTA -->
     <div class="section-inner" style="padding-top:var(--space-8); padding-bottom:var(--space-8);">
       <div class="reviews-cta reveal">
-        <p>Join 1000+ satisfied customers — All deals verified & real</p>
+        <p id="deals_cta_p_el">Join 1000+ satisfied customers — All deals verified & real</p>
         <a href="https://wa.me/923054411149" target="_blank" class="btn btn--primary">
-          Order Now on WhatsApp <span class="btn-arrow">↗</span>
+          <span id="deals_cta_btn_el">Order Now on WhatsApp</span> <span class="btn-arrow">↗</span>
         </a>
       </div>
     </div>
@@ -297,16 +298,16 @@
   <section class="packages" id="packages">
     <div class="section-inner">
       <div class="section-header reveal">
-        <span class="section-tag">UC Store</span>
-        <h2 class="section-title">Buy <span class="text-accent">UC</span> at Best Rates</h2>
-        <p class="section-sub">Instant delivery — straight to your PUBG account. Pakistan's lowest rates.</p>
+        <span class="section-tag" id="pkg_tag_el">UC Store</span>
+        <h2 class="section-title" id="pkg_title_el">Buy <span class="text-accent">UC</span> at Best Rates</h2>
+        <p class="section-sub" id="pkg_sub_el">Instant delivery — straight to your PUBG account. Pakistan's lowest rates.</p>
       </div>
 
       <!-- Region tabs -->
       <div class="pkg-tabs" id="pkgTabs">
         <button class="pkg-tab active" data-tab="pk">Pakistan</button>
-        <button class="pkg-tab" data-tab="other">Other Regions</button>
-        <button class="pkg-tab" data-tab="login">Login UC</button>
+        <button class="pkg-tab" data-tab="other" id="pkg_tab_other_el">Other Regions</button>
+        <button class="pkg-tab" data-tab="login" id="pkg_tab_login_el">Login UC</button>
       </div>
 
       <!-- Pakistan Packages -->
@@ -527,7 +528,7 @@
 
       </div>
 
-      <p class="pkg-note reveal">Custom amount or different region? Message us on WhatsApp for best rates.</p>
+      <p class="pkg-note reveal" id="pkg_note_el">Custom amount or different region? Message us on WhatsApp for best rates.</p>
     </div>
   </section>
 
@@ -537,9 +538,9 @@
   <section class="how-it-works" id="about">
     <div class="section-inner">
       <div class="section-header reveal">
-        <span class="section-tag">Simple Process</span>
-        <h2 class="section-title">How It <span class="text-accent">Works</span></h2>
-        <p class="section-sub">3 easy steps. Takes less than 5 minutes.</p>
+        <span class="section-tag" id="hiw_tag_el">Simple Process</span>
+        <h2 class="section-title" id="hiw_title_el">How It <span class="text-accent">Works</span></h2>
+        <p class="section-sub" id="hiw_sub_el">3 easy steps. Takes less than 5 minutes.</p>
       </div>
 
       <div class="steps-grid">
@@ -548,8 +549,8 @@
           <div class="step-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
           </div>
-          <h3>Message on WhatsApp</h3>
-          <p>Send us your PUBG UID and the UC amount you want. We reply instantly.</p>
+          <h3 id="hiw_s1_h_el">Message on WhatsApp</h3>
+          <p id="hiw_s1_p_el">Send us your PUBG UID and the UC amount you want. We reply instantly.</p>
         </div>
 
         <div class="step-connector reveal"></div>
@@ -559,8 +560,8 @@
           <div class="step-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
           </div>
-          <h3>Pay via Easypaisa / JazzCash</h3>
-          <p>Send payment to our number. We accept Easypaisa, JazzCash &amp; bank transfer.</p>
+          <h3 id="hiw_s2_h_el">Pay via Easypaisa / JazzCash</h3>
+          <p id="hiw_s2_p_el">Send payment to our number. We accept Easypaisa, JazzCash &amp; bank transfer.</p>
         </div>
 
         <div class="step-connector reveal"></div>
@@ -570,16 +571,16 @@
           <div class="step-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
           </div>
-          <h3>UC Delivered Instantly</h3>
-          <p>UC lands in your account within 5 minutes. Screenshot sent as proof.</p>
+          <h3 id="hiw_s3_h_el">UC Delivered Instantly</h3>
+          <p id="hiw_s3_p_el">UC lands in your account within 5 minutes. Screenshot sent as proof.</p>
         </div>
       </div>
 
       <div class="hiw-cta reveal">
         <a href="https://wa.me/923054411149" target="_blank" class="btn btn--primary">
-          Start Order Now ↗
+          <span id="hiw_cta_el">Start Order Now ↗</span>
         </a>
-        <span class="hiw-note">Average delivery: 3–5 minutes</span>
+        <span class="hiw-note" id="hiw_note_el">Average delivery: 3–5 minutes</span>
       </div>
     </div>
   </section>
@@ -590,9 +591,9 @@
   <section class="text-reviews" id="reviews">
     <div class="section-inner">
       <div class="section-header reveal">
-        <span class="section-tag">Customer Reviews</span>
-        <h2 class="section-title">What Customers <span class="text-accent">Say</span></h2>
-        <p class="section-sub">Real reviews from real buyers. 100% unfiltered.</p>
+        <span class="section-tag" id="rev_tag_el">Customer Reviews</span>
+        <h2 class="section-title" id="rev_title_el">What Customers <span class="text-accent">Say</span></h2>
+        <p class="section-sub" id="rev_sub_el">Real reviews from real buyers. 100% unfiltered.</p>
       </div>
 
       <!-- Review cards -->
@@ -674,31 +675,31 @@
 
       <!-- Add Review Form -->
       <div class="add-review-wrap reveal">
-        <h3 class="add-review-title">Share Your Experience</h3>
+        <h3 class="add-review-title" id="rev_form_title_el">Share Your Experience</h3>
         <form class="add-review-form" id="reviewForm" onsubmit="submitReview(event)">
           <div class="form-row">
             <div class="form-field">
-              <label>Your Name</label>
+              <label id="rev_lbl_name_el">Your Name</label>
               <input type="text" id="rName" placeholder="e.g. Ali Hassan" required />
             </div>
             <div class="form-field">
-              <label>City</label>
+              <label id="rev_lbl_city_el">City</label>
               <input type="text" id="rCity" placeholder="e.g. Lahore" required />
             </div>
           </div>
           <div class="form-field">
-            <label>Rating</label>
+            <label id="rev_lbl_rating_el">Rating</label>
             <div class="star-picker" id="starPicker">
               <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
             </div>
             <input type="hidden" id="rRating" value="5"/>
           </div>
           <div class="form-field">
-            <label>Your Review</label>
+            <label id="rev_lbl_review_el">Your Review</label>
             <textarea id="rText" rows="3" placeholder="Share your experience with RY Official..." required></textarea>
           </div>
           <div class="form-field">
-            <label>What did you buy?</label>
+            <label id="rev_lbl_product_el">What did you buy?</label>
             <select id="rProduct">
               <option>60 UC</option>
               <option>325 UC</option>
@@ -709,9 +710,9 @@
               <option>PUBG Account</option>
             </select>
           </div>
-          <button type="submit" class="btn btn--primary">Submit Review ↗</button>
+          <button type="submit" class="btn btn--primary" id="rev_submit_el">Submit Review ↗</button>
         </form>
-        <div class="review-success" id="reviewSuccess">Thank you! Your review has been submitted.</div>
+        <div class="review-success" id="reviewSuccess"><span id="rev_success_el">Thank you! Your review has been submitted.</span></div>
       </div>
 
     </div>
@@ -731,50 +732,51 @@
               <span class="logo-sub">PREMIUM STORE</span>
             </div>
           </a>
-          <p class="footer-tagline">Pakistan's most trusted PUBG UC &amp; Accounts store. Instant delivery, zero fraud.</p>
+          <p class="footer-tagline" id="footer_tagline_el">Pakistan's most trusted PUBG UC &amp; Accounts store. Instant delivery, zero fraud.</p>
           <a href="https://wa.me/923054411149" target="_blank" class="btn btn--primary footer-wa">
             <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Chat on WhatsApp
+            <span id="footer_wa_btn_el">Chat on WhatsApp</span>
           </a>
         </div>
 
         <div class="footer-links">
           <div class="footer-col">
-            <h4>Store</h4>
+            <h4 id="footer_h_store_el">Store</h4>
             <ul>
-              <li><a href="#packages">UC Packages</a></li>
-              <li><a href="#packages">PUBG Accounts</a></li>
-              <li><a href="#deals">Deals</a></li>
+              <li><a href="#packages" id="footer_uc_el">UC Packages</a></li>
+              <li><a href="#packages" id="footer_acc_el">PUBG Accounts</a></li>
+              <li><a href="#deals" id="footer_deals_el">Deals</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Info</h4>
+            <h4 id="footer_h_info_el">Info</h4>
             <ul>
-              <li><a href="#about">How It Works</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-              <li><a href="https://wa.me/923054411149" target="_blank">Contact</a></li>
+              <li><a href="#about" id="footer_hiw_el">How It Works</a></li>
+              <li><a href="#reviews" id="footer_reviews_el">Reviews</a></li>
+              <li><a href="https://wa.me/923054411149" target="_blank" id="footer_contact_el">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Payment</h4>
+            <h4 id="footer_h_pay_el">Payment</h4>
             <ul>
-              <li>Easypaisa</li>
-              <li>JazzCash</li>
-              <li>Bank Transfer</li>
+              <li id="footer_pay1_el">Easypaisa</li>
+              <li id="footer_pay2_el">JazzCash</li>
+              <li id="footer_pay3_el">Bank Transfer</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span>© 2026 RY-OFFICIAL — All rights reserved</span>
-        <span class="footer-credit">Made by Mudasir Shahzad</span>
+        <span id="footer_copy_el">© 2026 RY-OFFICIAL — All rights reserved</span>
+        <span class="footer-credit" id="footer_credit_el">Made by Mudasir Shahzad</span>
       </div>
     </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
 </body>
